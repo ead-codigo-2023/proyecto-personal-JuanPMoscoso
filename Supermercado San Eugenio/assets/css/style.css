@@ -1,0 +1,253 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+}
+
+header, nav, section, footer {
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid #afcfe0;
+    background-color: #e3f2fd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+
+.logo-izquierdo,
+.logo-derecho {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-izquierdo {
+    left: 2%;
+}
+
+.logo-derecho {
+    right: 2%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: #1565c0;
+}
+
+section h2 {
+    border-bottom: 1px solid #afcfe0;
+    color: #2196F3;
+    margin-top: 70px;
+}
+
+.categoria {
+    margin-bottom: 3%;
+}
+
+.categoria h3 {
+    color: #2196F3;
+}
+
+.producto, .oferta {
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 1px solid #b3e0ff;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+}
+
+.producto button.agregar-carrito {
+    background-color: #1565c0;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.producto:hover, .oferta:hover {
+    transform: scale(1.05);
+}
+
+.producto img, .oferta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.nombre {
+    font-weight: bold;
+    color: #1565c0;
+}
+
+.precio {
+    color: #2196F3;
+}
+
+footer {
+    margin-top: 2%;
+    text-align: center;
+    color: #1565c0;
+    background-color: #2196F3;
+    padding: 2%;
+    color: #fff;
+    border-radius: 5px;
+}
+.boton-contacto {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1565c0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: #0d47a1;
+}
+
+main {
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid #afcfe0;
+    background-color: #e3f2fd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1565c0;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+.producto-carrito {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #b3e0ff;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.producto-carrito img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px 0 0 5px;
+}
+
+.detalle {
+    padding: 10px;
+}
+
+.detalle h2 {
+    color: #2196F3;
+}
+
+.eliminar-producto {
+    background-color: #ff6961;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.eliminar-producto:hover {
+    background-color: #cc0000;
+}
+
+.boton-pagar {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-pagar:hover {
+    background-color: #45a049;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.campos-pago {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}

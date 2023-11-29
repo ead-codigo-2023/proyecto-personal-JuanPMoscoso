@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pagar</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="procesar_pago.php" method="post">
+            <label for="monto">Monto Total:</label>
+            <input type="text" id="monto" name="monto" value="$25.459" readonly>
+
+            <label for="metodo-pago">Seleccione el Método de Pago:</label>
+            <select id="metodo-pago" name="metodo-pago" required>
+                <option value="tarjeta-credito">Tarjeta de Crédito</option>
+                <option value="tarjeta-debito">Tarjeta de Débito</option>
+                <option value="otro">Otro Método</option>
+            </select>
+
+            <div id="campos-tarjeta-credito" class="campos-pago">
+                <label for="numero-tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AA" required>
+            </div>
+
+            <div id="campos-otro" class="campos-pago" style="display: none;">
+                <label for="otro-metodo">Detalle del Otro Método:</label>
+                <input type="text" id="otro-metodo" name="otro-metodo" placeholder="Especificar método" required>
+            </div>
+
+            <button type="submit">Realizar Pago</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Supermercado San Eugenio</p>
+    </footer>
+
+</body>
+</html>
